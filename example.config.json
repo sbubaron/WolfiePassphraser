@@ -1,0 +1,12 @@
+{
+
+"sentences": [
+    "[sample_one_words] [sample_two_words] Some Static Text [sample_one_words] [sample_two_words]",
+    "Some Static Text [sample_one_words] [sample_two_words] Some Other Static Text [sample_one_words] [sample_two_words]"
+],
+
+
+ "sample_one_words": ["Good Sample Word", "Another Good Sample Word"],
+ "sample_two_words": ["Bad Sample Word", "Another Bad Sample Word"]
+
+}
