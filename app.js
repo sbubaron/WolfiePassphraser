@@ -43,4 +43,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+app.get('/images/*', function(req, res) {
+  res.sendfile('/public/images/no_image.jpg')
+});
+
 module.exports = app;

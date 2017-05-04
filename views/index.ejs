@@ -1,10 +1,183 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<html class="{{ htmlClass }}">
+	<head>
+		<title>Wolfie Passphrase Generator</title>
+
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        
+        <link rel="stylesheet" href="/theme/unity/css/style.css" media="all" />
+        
+        <!-- Custom Fonts -->
+
+        <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ee71ef3e-a7f1-47dd-8ae1-4ae6bec02b30.css"/>
+        <link rel="apple-touch-icon" href="/theme/unity/images/favicons/apple-touch-icon-144x144-precomposed.png">
+        <link rel="icon" href="/theme/unity/images/favicons/icon.png">
+        <!--[if IE]>
+        <link rel="shortcut icon" href="/theme/unity/images/favicons/favicon.ico">
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="/theme/unity/js/header/header.dev.js"></script>
+
+        <link rel='stylesheet' href='/theme/site/css/style.css' />
+
+
+	</head>
+
+
+
   <body>
-    <h1><%= title %></h1>
+<header>
+		<div class="logo-container">
+			<div class="container">
+				
+				<div class="logo-wrapper clearfix">
+					<div class="logo">
+					<a href="#"><img src="/theme/unity/images/logos/stony-brook-university-logo.jpg" class="logo" alt="Stony Brook University"></a>
+					</div>
+					<h1 class="site-name"><a href="/">Wolfie Passphrase Generator</a></h1>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+
+  <div class="main-site-nav-wrap">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-11 col-xs-push-1 col-md-push-0 main-site-nav-cols">
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+<!-- End .header -->
+
+    <section class="cozy">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+    <h2>A Message from the CISO</h2>
+     <p> As many of you are already aware, short passwords are no longer sufficient to protect sensitive data. While two-step login is on the horizon, we cannot wait until that is fully implemented to, at least partially, address the risk of weak passwords. While a longer password can be frustrating at times, a well-chosen sentence serves as a good passphrase that is also easy to remember. Therefore, NetID passwords for all DoIT staff will be migrating to passphrases over the Summer.
+<strong>This policy will be enabled for DoIT NetIDs on Monday, June 12th.</strong> This gives everyone an opportunity to reset their password to a passphrase that meets the below requirements well in advance on your own timetable. Please note, the SOLAR self-service portal will no longer work for DoIT employees once this policy is enabled. As a result, you will no longer be able to reset your own password if you do not know what your current password is, or if your password expires without calling 2-9800 for assistance. To avoid this situation and any interruption in access, please diligently pay attention to the above requirements and your password expiration date. 
+</p>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+    <section class="cozy">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6">
+    <h2>Your Randomly Generated Passphrase</h2>
+    <div>
+    <strong>Sentence Form</strong>
+    <p><%- phraseSentenceForm %></p>
+    </div>
+
+    <div>
+    <strong>Spaces Removed</strong>
+    <p><%- phraseNoSpacesForm %></p>
+    </div>
+
+    <div>
+   <strong>Adding Some Numbers</strong>
+    <p><%- phraseLeetForm %></p>
+    </div>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-6">
+
+    
+    </div>
+    </div>
+    </div>
+    </section>
+
+        <section class="cozy">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6">
+    <h2>Inspriation</h2>
+    As IT Professionals we all have our fair share of password insecurities. We know that we can probably be doing a better job, we know the high level concepts: longer is better, adding puncuation and complexity helps; but the further we dive into "randomness" the less likely we are to remember, the more annoying it is to type and the more likely we are to write the password down. This tool aims to create easy to remember sentences, with just enough randomness that hopefully you'll be able to remember your new password. 
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-6">
+    <img class="img-responsive" src="https://imgs.xkcd.com/comics/password_strength.png" />
+    <a href="https://xkcd.com/936/">Credit to XKCD</a>
+    </div>
+     
+</p>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+    <footer class="site-footer">
+	<div class="top-footer dark-footer fluffy">
+	    <div class="container">
+	        <div class="row">
+	
+	                <div class="col-md-3">
+                    <div class="footer-nav">
+                        <strong>Related Links</strong>
+                        <ul><li><a href="http://it.stonybrook.edu">Division of Information Technology</a></li><li></ul>
+                    </div>
+	                </div>
+	                
+	        </div>
+	        
+	    </div>
+	</div>
+	<div class="bottom-footer">
+	
+    <div class="social-links">
+        <h3>Connect with @SBUDoIT</h3>
+    
+    
+            <a href="https://www.facebook.com/sbudoit" class="social-link social-link--facebook">
+                <span class="sr-only">Facebook</span>
+            </a>
+    
+            <a href="https://twitter.com/sbudoit" class="social-link social-link--twitter">
+             	<span class="sr-only">Twitter</span>
+            </a>
+    
+            <a href="https://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw" class="social-link social-link--youtube">
+             	<span class="sr-only">YouTube</span>
+            </a>
+    
+            <a href="https://www.flickr.com/photos/101383158@N02/" class="social-link social-link--flickr">
+             	<span class="sr-only">Flickr</span>
+            </a>
+    
+            <a href="https://instagram.com/sbudoit" class="social-link social-link--instagram">
+            	<span class="sr-only">Instagram</span>
+            </a>
+    
+            <a href="https://www.yammer.com/stonybrook.edu/" class="social-link social-link--yammer">
+            	<span class="sr-only">Yammer</span>
+            </a>
+        <p></p>
+    </div>
+	</div>
+	</footer>
+
   </body>
 </html>
